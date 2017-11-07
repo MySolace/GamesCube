@@ -3,6 +3,7 @@ All notable changes to this project will be documented in this file.
 This project adheres to [Semantic Versioning](http://semver.org/).
 
 ## Unreleased
+- pin356 script updated to add timer and short/long press to manage emulator exit and reset (reset only for RA)
 
 ## [17.11.02] - 2017-11-02
 - add upgrade logs to the support archive
