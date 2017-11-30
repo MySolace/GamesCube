@@ -1,10 +1,9 @@
-recalbox
+MySolace:GamesCube
 ========
-![](https://s3-eu-west-1.amazonaws.com/forums.recalbox.com/8d81e556-aefb-4729-ad2f-9d7386eff4cd.png)
 
-Welcome to the main recalbox repository.
-
-This repository contains the source code that build the recalboxOS for different boards.
+ [![Waffle.io - Columns and their card count](https://badge.waffle.io/MySolace/GamesCube.svg?columns=all)](https://waffle.io/MySolace/GamesCube) 
+ 
+This repository builds the images for the MySolace:GamesCube.
 
 Recalbox is an opensource project. We hope that you will contribute and help us to improve this OS.
 But if you are working on a fork, by respect for our work, we ask you not to integrate our work in progress located on branches other than master.
