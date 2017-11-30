@@ -291,6 +291,10 @@ do_upgrade() {
     return 0
 }
 
+// Restore before reboot occurs to retain audio configuration
+pre_reboot_actions() {
+	alsactl -f /recalbox/share/system/configs/asound.state restore
+}
 RMODE="$SHAREDEVICE" 
 
 if echo "${RMODE}" | grep -qE '^DEV '
@@ -363,7 +367,8 @@ then
     # remove to not apply it indefinitly, even if it fails
     rm "/recalbox/share/system/upgrade/boot.tar.xz" "/recalbox/share/system/upgrade/root.tar.xz"
     
-    # rebooting now
+    # run actions before reboot
+    pre_reboot_actions
     shutdown -r now
 fi
 
